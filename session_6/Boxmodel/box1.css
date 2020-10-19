@@ -1,0 +1,32 @@
+         /* bai 1 */
+ /* .content-1{
+    width: 200px;
+    height:200px;
+    background:wheat;
+    font-size:30px;
+    text-align:center;
+    line-height:200px;
+    border-radius: 30px;
+    border: 3px solid blue;
+}  */
+        /* bai 2
+.content-2{
+    background: wheat;
+    width:400px;
+    border: 2px solid green;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 45px 40px 45px 40px;
+}    */ 
+        /* bai3 */
+        #content-3 >div {
+            background:wheat;
+            /* margin-left:40px;
+            margin-right: 60px;
+            margin-top: 50px;
+            margin-bottom: 50px; */
+            margin: 50px;
+          }
+          #content-3{
+            border:1px solid black
+          }

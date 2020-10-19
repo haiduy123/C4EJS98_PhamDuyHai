@@ -1,0 +1,8 @@
+#span1{
+    background: red;
+  }
+  #span2{
+    background-color:yellow;
+    width: 500px;
+    display: inline-block;
+  }
