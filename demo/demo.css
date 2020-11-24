@@ -1,0 +1,83 @@
+
+.anhbia{
+    width: 100%;
+    margin-top: 15px;
+}
+    /* position: absolute; */
+.in4{
+    
+    margin-top: -46px;
+    margin-left: 318px;
+}
+.input{
+    background-color: #80808036;
+    width: 310px;
+    height: 40px;
+}
+.btn{
+    height:46px;
+    width: 46px;
+    background-color: #80808036;
+}
+.trangchu{
+    background-color: #80808036;
+    height: 46px;
+    width:100px;
+    /* margin-left: 300px;
+    margin-top: 10px; */
+}
+.theloai{
+    background-color: #80808036;
+    height: 46px;;
+    width:100px;    
+    /* margin-top: 10px */
+}
+.thongtin{
+    background-color: #80808036;
+    height: 46px;
+    width:100px; 
+    /* margin-top: -10px */
+}
+.btn1{
+    margin-top: -8px;
+    margin-left: 100px;
+    
+}
+.btn2{
+    margin-top: -46px;
+    margin-left: 335px;
+   
+}
+.btn3{
+    margin-top: -46px;
+    margin-left: 315px;
+}
+.icon1{
+    margin-top: -32px;
+    margin-left: -815px;
+}
+.icon2{
+    margin-top: -32px;
+    margin-left: -485px;
+}
+.icon3{
+    margin-top: -32px;
+    margin-left: -170px;
+}
+.icon4{
+    margin-top: -32px;
+    margin-left: -1055px;
+}
+.icon5{
+    margin-top: -32px;
+    margin-left: 390px;
+}
+.main-content{
+    margin-top: -820px;
+    margin-left: 580px;
+    color: rgb(127 15 211 / 76%);
+    line-height: 45px;
+}
+.heading{
+    font-size: 25px;
+}
