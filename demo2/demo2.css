@@ -1,0 +1,51 @@
+.trangchu{
+    width: 500px;
+    height:330px;
+    background-color:#8080801f;
+    margin-top: 300px;
+    margin-left: 500px;
+    position: absolute;
+}
+.text1{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+.hihi{
+    text-decoration: none;
+}
+.haha{
+    text-decoration: none;
+}
+.kenh14{
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;  
+}
+.cot1{
+    line-height: 65px;
+}
+.cot2{
+    line-height: 65px;
+}
+.cot3{
+    line-height: 65px;
+}
+.btn{
+    text-align: center;
+}
+.btn1:hover{
+    background-color: #5cb85c;
+    /* border-color: #4cae4c; */
+}
+.btn1{
+    /* background-color: #008000b3; */
+ text-align: center;
+}
+
+

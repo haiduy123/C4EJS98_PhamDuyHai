@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">EBOOK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thể loại  
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Tất cả sách</a>
+                <a class="dropdown-item" href="#">Tâm lý- Kĩ năng sống</a>
+                <a class="dropdown-item" href="#">Kinh tế- Quản lý</a>
+                <a class="dropdown-item" href="#">Y học- Sức khỏe</a>
+                <a class="dropdown-item" href="#">Học Ngoại Ngữ</a>
+              </div>
+            </li>
+      
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thông tin
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Lời nói đầu</a>
+                <a class="dropdown-item" href="#">Bản quyền</a>
+                <a class="dropdown-item" href="#">Liên hệ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Ủng hộ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+              </div>
+            </li>
+      
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div>
+        
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Unnamed.jpg" style="width:700px">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Thu-Vien-Trinity-Col.jpg" style="width:700px">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Tu-Vien-Strahov-5.jpg" style="width:700px">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 1500); // Change image every 2 seconds
+        }
+        </script>
+        
+      <div class="main">
+        <div class="cot1" >
+          <div >
+            <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+              <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/126049663_383087909598462_2815363393972336259_n.png?_nc_cat=111&ccb=2&_nc_sid=ae9488&_nc_ohc=PA3iAcHb5RoAX-0cGfa&_nc_ht=scontent.fhan6-1.fna&oh=41ec11f75ab2b7be571ab0bcae2bc960&oe=5FDA9D69" class="anh1">
+              <h5 class="ten1">Yêu em từ cái nhìn đầu tiên</h5>
+           </a>
+          </div>
+            <div class="boc">
+              <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+                <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/121487370_336459604252461_7801969223561742129_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=DHg0ypghp9AAX8CNa-w&_nc_oc=AQk9rJQxbhrCHyapnbUYizOnfmsy_NogvedDeVr1bwosmsxfRKBj8CjEK-aW84OJWaU&_nc_ht=scontent.fhan6-1.fna&oh=c066e98dcb69cb4ab9e295fb04fa6527&oe=5FDC6FF2" class="anh2">
+                <h5 class="ten2">Mắt Biếc</h5>
+                </a>
+            </div>
+        <div class="boc">
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/126007689_383649452952950_1987026370684623324_n.png?_nc_cat=111&ccb=2&_nc_sid=ae9488&_nc_ohc=mG5-Q4775vwAX_-Tez9&_nc_ht=scontent.fhan6-1.fna&oh=820580f1a531f517c2c7f57b6e56e65f&oe=5FDBCFE8" class="anh3">
+            <h5 class="ten3">Tấm Cám</h5>
+            </a>
+        </div>
+        </div>
+       <div class="cot2">
+         <div >
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/126058228_820769248497569_5878129933663317052_n.png?_nc_cat=105&ccb=2&_nc_sid=ae9488&_nc_ohc=i6IQ2QFdPvIAX-Nv6s0&_nc_ht=scontent.fhan6-1.fna&oh=51b152b98acdaf93e2c52481d6990cdf&oe=5FDDCE67" class="anh4">
+            <h5 class="ten4">Lá thư thách đấu gửi Kudo </h5>
+  
+            </a>
+         </div>
+        <div class="boc">
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/125219260_410828000074193_2977130577506476509_n.png?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=T4d7joIqGNEAX-j3qei&_nc_ht=scontent.fhan6-1.fna&oh=6fd33562ab2fb3657a3abe81869ef08b&oe=5FDD91EB" class="anh5">
+            <h5 class="ten5">Vòng tròn ác nghiệt</h5>
+            </a>
+        </div>
+        <div >
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/125532815_473991853578407_7331774975888286948_n.png?_nc_cat=110&ccb=2&_nc_sid=ae9488&_nc_ohc=1qwMufdwFfwAX9EyYC0&_nc_ht=scontent.fhan6-1.fna&oh=5a9e141e207b25488449a86504838971&oe=5FDC791F" class="anh6">
+            <h5 class="ten6">Bão Lửa U23</h5>
+            </a>
+        </div>
+        
+       </div> 
+       <div class="cot3" >
+         <div >
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  alt="W3Schools" src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/125434408_210667513763653_4276879602947922585_n.png?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=F86s7WTPfw4AX9Ycfer&_nc_ht=scontent.fhan6-1.fna&oh=bedc8b0b15447652c3415a071d725a51&oe=5FDAE36F" class="anh7">
+            <h5 class="ten7">Sinh ra để chạy</h5>
+            </a>
+         </div>
+         <div >
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/125421421_377794433274853_5586766798677466296_n.png?_nc_cat=100&ccb=2&_nc_sid=ae9488&_nc_ohc=y-qvvv9r-1IAX9Yp-9s&_nc_ht=scontent.fhan6-1.fna&oh=38b8eeababba8b800999fd2ee58c32c7&oe=5FDBB809" class="anh8">
+            <h5 class="ten8">Vĩ đại do lựa chọn</h5>
+            </a>
+         </div>
+        <div >
+          <a href="https://sachvui.com/doc-sach/doraemon-tron-bo-fujiko-f-fujio/tap-1-chuong-1-doremon-da-den-voi-nobita-nhu-the-nao.html">
+            <img  src="https://scontent.fhan6-1.fna.fbcdn.net/v/t1.15752-9/125293533_1083357768765773_7653281678478924802_n.png?_nc_cat=103&ccb=2&_nc_sid=ae9488&_nc_ohc=7KePf19J6l0AX-GSo4m&_nc_ht=scontent.fhan6-1.fna&oh=8f197bb7261fbba511d09516929e8abe&oe=5FDA92B7" class="anh9">
+            <h5 class="ten9">Vi sinh vật vi tính</h5>
+            </a>
+        </div>
+        
+       </div>
+      </div>
+      <img src="https://channel.mediacdn.vn/2020/9/28/photo-2-1601299662801510432938.jpg"class="anhbia2" >
+    </div> 
+      <!-- <div class="hihi">
+        <strong class="haha">
+          Thể loại sách
+        </strong>
+        <div class="text1">
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p>
+          <p>
+            <a href="https://anh67k6.github.io/demonew.io/" class="hihi1">Facebook</a>
+          </p> -->
+      <!-- <div >
+        <img src="https://channel.mediacdn.vn/2020/9/28/photo-2-1601299662801510432938.jpg"class="anhbia2" >
+      </div> -->
+      
+      
+      <!-- <div >
+        <img src="https://afamilycdn.com/thumb_w/660/2017/img20170614085022781.jpg"class="anhbia1" >
+      </div> -->
+</body>
+</html>

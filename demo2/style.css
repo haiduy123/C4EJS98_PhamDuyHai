@@ -1,0 +1,21 @@
+.doc-online{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color:#eee;
+    line-height: 38px;
+    font-size:18px;
+}
+
+.text-center{
+    text-align:center;
+}
+
+#title{
+    line-height: 38px;
+    font-size: 38px;
+}
+
+#noidung {
+    text-align: right !important;
+}
