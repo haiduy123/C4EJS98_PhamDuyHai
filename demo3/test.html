@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 700px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style2.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="home" style="display: block;">
+        <!-- Trang chủ -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">EBOOK</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thể loại  
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tất cả sách</a>
+                        <a class="dropdown-item" href="#">Tâm lý- Kĩ năng sống</a>
+                        <a class="dropdown-item" href="#">Kinh tế- Quản lý</a>
+                        <a class="dropdown-item" href="#">Y học- Sức khỏe</a>
+                        <a class="dropdown-item" href="#">Học Ngoại Ngữ</a>
+                      </div>
+                    </li>
+              
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Thông tin
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lời nói đầu</a>
+                        <a class="dropdown-item" href="#">Bản quyền</a>
+                        <a class="dropdown-item" href="#">Liên hệ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ủng hộ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+                      </div>
+                    </li>
+              
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+        </nav>
+              <div class="slideshow-container">
+        
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Unnamed.jpg" class="slide1">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Thu-Vien-Trinity-Col.jpg" class="slide1">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="https://media.laodong.vn/Storage/NewsPortal/2020/10/5/842222/Tu-Vien-Strahov-5.jpg" class="slide1">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+              </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 1500); // Change image every 2 seconds
+                }
+                </script>
+        
+              <div class="main" >
+                <div class="cot1" >
+                  <div id="anh1" >
+                      <img  src="./anh1.png" class="anh1" width="100%">
+                      <h5 class="ten1">Yêu em từ cái nhìn đầu tiên</h5>
+                  </div>
+                  <div>
+                      <img  src="./anh2.png" class="anh2">
+                      <h5 class="ten2">Mắt Biếc</h5>
+                    </div>
+                  <div >
+                      <img  src="./anh3.png" class="anh3">
+                      <h5 class="ten3">Tấm Cám</h5>
+                </div>
+                </div>
+                <div class="cot2">
+                <div >
+                    <img  src="./anh4.png" class="anh4">
+                    <h5 class="ten4">Lá thư thách đấu gửi Kudo </h5>
+                </div>
+                <div >
+                    <img  src="./anh5.png" class="anh5">
+                    <h5 class="ten5">Vòng tròn ác nghiệt</h5>
+                </div>
+                <div >
+                    <img src="./anh6.png" class="anh6">
+                    <h5 class="ten6">Bão Lửa U23</h5>
+                </div>
+                </div> 
+                <div class="cot3" >
+                <div >
+                    <img  src="./anh7.png" class="anh7">
+                    <h5 class="ten7">Sinh ra để chạy</h5>
+                 </div>
+                 <div >
+                    <img  src="./anh8.png" class="anh8">
+                    <h5 class="ten8">Vĩ đại do lựa chọn</h5>
+                 </div>
+                <div >
+                    <img  src="./anh9.png" class="anh9">
+                    <h5 class="ten9">Vi sinh vật vi tính</h5>
+                </div>
+              </div>
+              </div>
+              <img src="https://channel.mediacdn.vn/2020/9/28/photo-2-1601299662801510432938.jpg"class="anhbia2" >
+        </div> 
+        <!-- Trang chủ -->
+        </div>
+        <div>
+        <div id="read" style="display: none;">
+        <!-- Đọc truyện -->
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">EBOOK</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Trang chủ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Thể loại  
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Tất cả sách</a>
+                      <a class="dropdown-item" href="#">Tâm lý- Kĩ năng sống</a>
+                      <a class="dropdown-item" href="#">Kinh tế- Quản lý</a>
+                      <a class="dropdown-item" href="#">Y học- Sức khỏe</a>
+                      <a class="dropdown-item" href="#">Học Ngoại Ngữ</a>
+                    </div>
+                  </li>
+          
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Thông tin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Lời nói đầu</a>
+                      <a class="dropdown-item" href="#">Bản quyền</a>
+                      <a class="dropdown-item" href="#">Liên hệ</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Ủng hộ</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Báo cáo vi phạm</a>
+                    </div>
+                  </li>
+          
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+            <!-- Navbar -->
+          
+          
+          <div class='container' id="container">
+            <div class="doc-online">
+              <h3 class="text-center">Án Tử Một Tình Yêu - The Death Of A Love</h3>
+              <div class="text-center" id="title"></div>
+              <h3 class="text-center"><small>Lời giới thiệu</small></h3>
+              <div style="text-align: center;">
+              <div class="btn-group">
+                <button id="button"type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <div class="dropdown-menu" id ="dropdown-menu">
+                </div>
+              </div>
+              <div id="noi-dung" style="text-align: left;"></div>
+              </div>
+            </div>
+            <div class="alert"><b>Cảnh cáo</b>: Không thương mại hóa dưới mọi hình thức</div>
+          </div>
+          
+          
+          
+          <!-- comment -->
+          <div class="comment">
+            <div class="binhluan">Bình luận</div>
+          <div style="text-align: center;">
+            <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=704224526887223";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-comments" data-href="https://anh67k6.github.io/ebook.io/" data-colorscheme="light" 
+          data-numposts="5" data-width="500"></div>
+          </div>
+          </div>
+          <button id="back">X</button>
+        </div>
+        
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        
+        <script src="./app.js"></script>
+        </body>
+        </html>
